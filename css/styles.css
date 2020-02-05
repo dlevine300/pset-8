@@ -53,6 +53,21 @@ h1 {
   cursor: pointer;
 }
 
+#X-wins {
+  font-size: 28px;
+  font-family: times;
+  color: red;
+}
+#O-wins {
+  font-size: 28px;
+  font-family: times;
+  color: blue;
+}
+#tie  {
+  font-size: 28px;
+  font-family: times;
+  color: green;
+}
 #reset-button {
   background-color: white;
   border: 1px solid black;

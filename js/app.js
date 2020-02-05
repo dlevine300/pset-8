@@ -21,6 +21,8 @@ let win;
 
 const squares = Array.from(document.querySelectorAll("#board div"));
 const message = document.querySelector("h2");
+const winCountX = document.querySelector("X-wins");
+const winCountO = document.querySelector("O-wins");
 
 ///////////////////// EVENT LISTENERS ///////////////////////////////
 
@@ -78,4 +80,8 @@ function getWinner() {
   });
 
   return winner ? winner : board.includes("") ? null : "T";
+}
+function addXWin() {
+  let winCountX = 0;
+  let winCountO = 0;
 }
