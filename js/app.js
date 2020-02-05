@@ -82,6 +82,8 @@ function getWinner() {
   return winner ? winner : board.includes("") ? null : "T";
 }
 function addXWin() {
-  let winCountX = 0;
-  let winCountO = 0;
+  if (win = "X" ) {
+    let element = document.getElementById("X-wins");
+element.innerHTML = "X wins: 1";
+}
 }
