@@ -20,6 +20,11 @@ h1 {
   font-weight: bold;
   margin: 2%;
 }
+#order {
+  font size: 30px;
+  font-weight: bold;
+  border-style: inset;
+}
 
 .container {
   display: flex;
