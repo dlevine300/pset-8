@@ -16,6 +16,9 @@ const winningConditions = [
 let board;
 let turn;
 let win;
+let x_Wins = 0;
+let y_Wins = 0;
+let order = "X"
 
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 
@@ -30,6 +33,7 @@ window.onload = init;
 
 document.getElementById("board").onclick = takeTurn;
 document.getElementById("reset-button").onclick = init;
+document.getElementbyId("order").onclick = changeOrder;
 
 ///////////////////// FUNCTIONS /////////////////////////////////////
 
@@ -66,6 +70,13 @@ function takeTurn(e) {
   }
 }
 
+function changeOrder() {
+  init(); if (order === "X") {
+    turn = "O"; order = "O";
+}
+else { turn = "X"; order = "X"
+}
+document.getElementById("change-order-button").innerHTML = order; render();}
 function getWinner() {
   let winner = null;
 
