@@ -106,7 +106,7 @@ function changeOrder() {
     if (starter === "X") {
         turn = "O";
         starter = "O";
-    }
+    }.
     else {
         turn = "X";
         starter = "X"
